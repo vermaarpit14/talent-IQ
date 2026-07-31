@@ -47,25 +47,25 @@ Talent-IQ is a **full-stack AI-powered technical interview platform** designed t
 
 ## 🏠 Landing Page
 
-```text
-Screenshot from 2026-08-01 00-44-27.png
-```
+<p align="center">
+  <img src="./images/home.png" width="900"/>
+</p>
 
 ---
 
 ## 📊 Interview Dashboard
 
-```text
-images/dashboard.png
-```
+<p align="center">
+  <img src="./images/dashboard.png" width="900"/>
+</p>
 
 ---
 
 ## 💻 Coding Environment
 
-```text
-images/editor.png
-```
+<p align="center">
+  <img src="./images/editor.png" width="900"/>
+</p>
 
 ---
 
