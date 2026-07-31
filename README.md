@@ -19,7 +19,8 @@
    ╚═╝   ╚═╝  ╚═╝╚══════╝╚══════╝╚═╝  ╚═══╝   ╚═╝   ╚════╝  ╚══ ▀▀═╝
 ```
 
-### 💡 AI-Powered Technical Interview & Coding Assessment Platform
+
+### AI-Powered Technical Interview & Coding Assessment Platform
 
 </div>
 
@@ -27,36 +28,36 @@
 
 # 🌟 Overview
 
-Talent-IQ is a **full-stack AI-powered technical interview platform** designed to simulate real software engineering interviews through intelligent questioning, real-time coding, secure authentication, and automated code execution.
+Talent-IQ is a full-stack web application that simulates real-world software engineering interviews. It combines AI-assisted interviewing, secure candidate management, automated code execution, and an intuitive coding workspace into a single platform.
 
-✨ **Highlights**
+The project was built to explore modern full-stack development while solving a practical problem faced by students, recruiters, and educational institutions: conducting scalable and intelligent technical interviews.
 
-- 🤖 AI-assisted technical interviews
-- 💻 Real-time coding environment
-- 🔐 Secure authentication
-- 📊 Candidate management
-- ⚡ Automated code execution
-- 🎯 Interactive coding challenges
-- 📱 Responsive UI
+---
+
+# 🎯 Objectives
+
+- Simulate technical interviews.
+- Evaluate coding ability in real time.
+- Execute code securely.
+- Store interview sessions and candidate data.
+- Provide an extensible architecture for future AI-driven feedback.
 
 ---
 
 # 📸 Screenshots
 
-> Replace these placeholders with your actual screenshots.
-
 ## 🏠 Landing Page
 
 <p align="center">
-  <img src="./images/home.png" width="900"/>
+<img src="./images/home.png" width="900"/>
 </p>
 
 ---
 
-## 📊 Interview Dashboard
+## 📊 Dashboard
 
 <p align="center">
-  <img src="./images/dashboard.png" width="900"/>
+<img src="./images/dashboard.png" width="900"/>
 </p>
 
 ---
@@ -64,64 +65,97 @@ Talent-IQ is a **full-stack AI-powered technical interview platform** designed t
 ## 💻 Coding Environment
 
 <p align="center">
-  <img src="./images/editor.png" width="900"/>
+<img src="./images/editor.png" width="900"/>
 </p>
 
 ---
 
 # ✨ Core Features
 
-- 🤖 AI Interview Workflow
-- 🔐 Secure Authentication
-- 💻 Live Coding Environment
-- 🌍 Multiple Programming Languages
-- ⚡ Automated Code Execution
-- 📝 Interview Session Management
-- 🗄️ MongoDB Persistence
-- 🔗 RESTful APIs
-- ⚛️ React + Vite Frontend
-- 🚀 Express.js Backend
+- 🤖 AI-assisted interview workflow
+- 💻 Browser-based coding environment
+- 🌍 Multi-language code execution
+- 🔐 Authentication and authorization
+- 📝 Interview session management
+- 📦 Modular REST API architecture
+- ⚡ Express.js backend
+- ⚛️ React + Vite frontend
+- 🗄️ MongoDB persistence
+- 📱 Responsive interface
+- 🔄 Clean separation of frontend and backend
+- 🚀 Scalable project structure
 
 ---
 
 # 🏗️ System Architecture
 
 ```text
-                    +-----------------------------+
-                    |         Candidate           |
-                    +--------------+--------------+
-                                   |
-                              React + Vite
-                                   |
-                           REST API Requests
-                                   |
-+------------------------------------------------------------------+
-|                      Express.js Backend                          |
-+------------------------------------------------------------------+
-          |                     |                     |
-          v                     v                     v
-+----------------+    +------------------+   +----------------------+
-| Authentication |    | Interview Engine |   | Code Execution Layer |
-+----------------+    +------------------+   +----------------------+
-          |                     |                     |
-          +---------------------+---------------------+
-                                |
-                                v
-                      +---------------------+
-                      |      MongoDB        |
-                      +---------------------+
+                        +------------------------+
+                        |       Candidate        |
+                        +-----------+------------+
+                                    |
+                             React + Vite UI
+                                    |
+                           HTTP / REST Requests
+                                    |
++-------------------------------------------------------------------+
+|                      Express.js Application                        |
++-------------------------------------------------------------------+
+      |               |                  |                |
+      v               v                  v                v
++-----------+   +-------------+   +-------------+   +--------------+
+| Auth API  |   | Interview   |   | Code Runner |   | AI Services  |
++-----------+   +-------------+   +-------------+   +--------------+
+          \            |                |              /
+           \           |                |             /
+            +----------+----------------+------------+
+                               |
+                               v
+                        MongoDB Database
 ```
 
 ---
 
-# 🛠️ Tech Stack
+# ⚙️ Tech Stack
 
-| Layer | Technologies |
-|-------|--------------|
-| 🎨 Frontend | React, Vite, JavaScript, CSS |
-| ⚙️ Backend | Node.js, Express.js |
-| 🗄️ Database | MongoDB, Mongoose |
-| 🤖 Services | AI Integration, REST APIs, Code Execution |
+| Category | Technologies |
+|-----------|--------------|
+| Frontend | React, Vite, JavaScript, CSS |
+| Backend | Node.js, Express.js |
+| Database | MongoDB, Mongoose |
+| APIs | REST APIs |
+| Services | AI Integration, Code Execution |
+
+---
+
+# 📂 Project Structure
+
+```text
+talent-IQ
+│
+├── frontend
+│   ├── src
+│   │   ├── components
+│   │   ├── pages
+│   │   ├── hooks
+│   │   ├── api
+│   │   ├── lib
+│   │   └── data
+│   └── package.json
+│
+├── backend
+│   ├── src
+│   │   ├── controllers
+│   │   ├── routes
+│   │   ├── middleware
+│   │   ├── models
+│   │   ├── lib
+│   │   └── config
+│   └── package.json
+│
+├── images
+└── README.md
+```
 
 ---
 
@@ -133,12 +167,14 @@ Talent-IQ is a **full-stack AI-powered technical interview platform** designed t
 - npm
 - MongoDB
 
+## Clone
+
 ```bash
 git clone https://github.com/vermaarpit14/talent-IQ.git
 cd talent-IQ
 ```
 
-### Backend
+## Backend
 
 ```bash
 cd backend
@@ -146,7 +182,7 @@ npm install
 npm run dev
 ```
 
-### Frontend
+## Frontend
 
 ```bash
 cd frontend
@@ -167,57 +203,76 @@ AI_API_KEY=
 
 ---
 
-# 📂 Project Structure
+# 📡 Typical Workflow
 
 ```text
-talent-IQ
-├── frontend
-│   ├── src
-│   ├── public
-│   └── package.json
-├── backend
-│   ├── src
-│   │   ├── controllers
-│   │   ├── routes
-│   │   ├── middleware
-│   │   ├── models
-│   │   └── lib
-│   └── package.json
-└── README.md
+Candidate Login
+       │
+       ▼
+Interview Session
+       │
+       ▼
+Coding Question
+       │
+       ▼
+Code Execution
+       │
+       ▼
+Evaluation
+       │
+       ▼
+Results Stored
 ```
+
+---
+
+# 💡 Design Principles
+
+- Modular architecture
+- Separation of concerns
+- RESTful communication
+- Reusable React components
+- Scalable backend organization
+- Maintainable codebase
 
 ---
 
 # 🚧 Future Improvements
 
-- 🎥 Live video interviews
-- 👥 Collaborative coding
-- 📈 AI analytics dashboard
-- 🏢 Recruiter portal
-- 📄 Candidate reports
-- 🐳 Docker deployment
-- 🔄 CI/CD pipeline
+- Video interview integration
+- Screen sharing
+- AI feedback generation
+- Recruiter analytics
+- Leaderboards
+- Docker support
+- CI/CD pipeline
+- Kubernetes deployment
+- WebSocket collaboration
+- Automated plagiarism detection
 
 ---
 
 # 📚 Learning Outcomes
 
-- Full-Stack Development
-- REST API Design
-- Authentication & Authorization
-- Database Modeling
-- AI Integration
-- Modern React Development
-- Backend Architecture
+- Full-stack application development
+- REST API design
+- React architecture
+- Express.js backend development
+- Authentication & authorization
+- MongoDB data modeling
+- AI service integration
+- Modular software engineering
+- Project structuring
+- Deployment fundamentals
 
 ---
 
 # 👨‍💻 Author
 
-## **Arpit Verma**
+**Arpit Verma**
 
 ---
 
 # 📜 License
 
-**MIT License**
+MIT License
